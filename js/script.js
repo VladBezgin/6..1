@@ -16,7 +16,7 @@ let open = document.getElementById('open-btn'),
 	chooseItem = document.querySelector('.choose-item'),
 	timeValue = document.querySelector('.time-value'),
 	countBudgetValue = document.querySelector('.count-budget-value'),
-
+	//goodsItem = document.querySelectorAll('.goods-item')
 	hireEmployersItem = document.querySelectorAll('.hire-employers-item');
 
 let priceBtn = document.getElementsByTagName('button')[4],
@@ -33,6 +33,9 @@ let money,   price;
 //hireEmployersItem.match([а-я][А-Я]);
 
  initButtons();
+
+
+
 
 
 countBudgetValue.onkeypress = function(event){
@@ -148,10 +151,82 @@ timeValue.addEventListener('change', () => {
     if(mainList.open === true) {
     	isopenValue.style.backgroundColor = 'green';
     	budgetBtn.removeAttribute('disabled');
-    	employersBtn.removeAttribute('disabled');
-    	goodsBtn.removeAttribute('disabled');
-    	priceBtn.removeAttribute('disabled');
-    	console.log('1');
+
+    	
+    	
+    	goodsItem[0].addEventListener('change', () => {
+	if (goodsItem[0].value == '') {	
+		goodsBtn.setAttribute('disabled', '');
+	} else {
+		
+		goodsBtn.removeAttribute('disabled');
+	};
+	});
+
+    	goodsItem[1].addEventListener('change', () => {
+	if (goodsItem[1].value == '') {	
+		goodsBtn.setAttribute('disabled', '');
+	} else {
+		
+		goodsBtn.removeAttribute('disabled');
+	};
+	});
+
+    	goodsItem[2].addEventListener('change', () => {
+	if (goodsItem[2].value == '') {	
+		goodsBtn.setAttribute('disabled', '');
+	} else {
+		
+		goodsBtn.removeAttribute('disabled');
+	};
+	});
+
+    	goodsItem[3].addEventListener('change', () => {
+	if (goodsItem[3].value == '') {	
+		goodsBtn.setAttribute('disabled', '');
+	} else {
+		
+		goodsBtn.removeAttribute('disabled');
+	};
+	});
+
+    	hireEmployersItem[0].addEventListener('change', () => {
+	if (hireEmployersItem[0].value == '') {	
+		employersBtn.setAttribute('disabled', '');
+	} else {
+		
+		employersBtn.removeAttribute('disabled');
+	};
+	});
+
+    hireEmployersItem[1].addEventListener('change', () => {
+	if (hireEmployersItem[1].value == '') {	
+		employersBtn.setAttribute('disabled', '');
+	} else {
+		
+		employersBtn.removeAttribute('disabled');
+	};
+	});
+
+	hireEmployersItem[2].addEventListener('change', () => {
+	if (hireEmployersItem[2].value == '') {	
+		employersBtn.setAttribute('disabled', '');
+	} else {
+		
+		employersBtn.removeAttribute('disabled');
+	};
+	});
+    
+
+    priceInput.addEventListener('change', () => {
+	if (priceInput.value == '') {	
+		priceBtn.setAttribute('disabled', '');
+	} else {
+		
+		priceBtn.removeAttribute('disabled');
+	};
+	});
+
     } else {
     	isopenValue.style.backgroundColor = 'red';
     	budgetBtn.setAttribute('disabled', '');
@@ -204,4 +279,3 @@ let mainList = {
 
 
 }
-
