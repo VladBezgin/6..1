@@ -155,7 +155,7 @@ timeValue.addEventListener('change', () => {
     	
     	
     	goodsItem[0].addEventListener('change', () => {
-	if (goodsItem[0].value == '') {	
+	if (goodsItem[0].value == '' && goodsItem[1].value == '' && goodsItem[2].value == '' && goodsItem[3].value == '') {
 		goodsBtn.setAttribute('disabled', '');
 	} else {
 		
@@ -164,7 +164,7 @@ timeValue.addEventListener('change', () => {
 	});
 
     	goodsItem[1].addEventListener('change', () => {
-	if (goodsItem[1].value == '') {	
+	if (goodsItem[0].value == '' && goodsItem[1].value == '' && goodsItem[2].value == '' && goodsItem[3].value == '') {	
 		goodsBtn.setAttribute('disabled', '');
 	} else {
 		
@@ -173,7 +173,7 @@ timeValue.addEventListener('change', () => {
 	});
 
     	goodsItem[2].addEventListener('change', () => {
-	if (goodsItem[2].value == '') {	
+	if (goodsItem[0].value == '' && goodsItem[1].value == '' && goodsItem[2].value == '' && goodsItem[3].value == '') {	
 		goodsBtn.setAttribute('disabled', '');
 	} else {
 		
@@ -182,7 +182,7 @@ timeValue.addEventListener('change', () => {
 	});
 
     	goodsItem[3].addEventListener('change', () => {
-	if (goodsItem[3].value == '') {	
+	if (goodsItem[0].value == '' && goodsItem[1].value == '' && goodsItem[2].value == '' && goodsItem[3].value == '') {	
 		goodsBtn.setAttribute('disabled', '');
 	} else {
 		
@@ -191,7 +191,7 @@ timeValue.addEventListener('change', () => {
 	});
 
     	hireEmployersItem[0].addEventListener('change', () => {
-	if (hireEmployersItem[0].value == '') {	
+	if (hireEmployersItem[0].value == '' && hireEmployersItem[1].value == '' && hireEmployersItem[2].value == '') {	
 		employersBtn.setAttribute('disabled', '');
 	} else {
 		
@@ -200,7 +200,7 @@ timeValue.addEventListener('change', () => {
 	});
 
     hireEmployersItem[1].addEventListener('change', () => {
-	if (hireEmployersItem[1].value == '') {	
+	if (hireEmployersItem[0].value == '' && hireEmployersItem[1].value == '' && hireEmployersItem[2].value == '') {	
 		employersBtn.setAttribute('disabled', '');
 	} else {
 		
@@ -209,7 +209,7 @@ timeValue.addEventListener('change', () => {
 	});
 
 	hireEmployersItem[2].addEventListener('change', () => {
-	if (hireEmployersItem[2].value == '') {	
+	if (hireEmployersItem[0].value == '' && hireEmployersItem[1].value == '' && hireEmployersItem[2].value == '') {	
 		employersBtn.setAttribute('disabled', '');
 	} else {
 		
